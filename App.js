@@ -15,7 +15,25 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Button label="AC" />
+        <View style={styles.button}>
+          <Button label="AC" />
+          <Button label="/" />
+          <Button label="7" />
+          <Button label="8" />
+          <Button label="9" />
+          <Button label="*" />
+          <Button label="4" />
+          <Button label="5" />
+          <Button label="6" />
+          <Button label="-" />
+          <Button label="1" />
+          <Button label="2" />
+          <Button label="3" />
+          <Button label="+" />
+          <Button label="0" />
+          <Button label="." />
+          <Button label="=" />
+        </View>
       </View>
     </>
   );
@@ -24,8 +42,10 @@ const App: () => React$Node = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  button: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 });
 
