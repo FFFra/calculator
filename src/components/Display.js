@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 export default props => {
   return (
     <View style={styles.display}>
       <Text style={styles.dislayValues} numberOfLines={1}>
-        {props.values}
+        {props.value}
       </Text>
     </View>
   );
@@ -15,12 +15,12 @@ const styles = StyleSheet.create({
   display: {
     flex: 1,
     padding: 20,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     backgroundColor: 'rgba(0,0,0,0.6)',
-    alignItems: 'center',
+    alignItems: 'flex-end',
   },
   dislayValues: {
-    fontSize: 60,
+    fontSize: 80,
     color: '#FFF',
   },
 });
